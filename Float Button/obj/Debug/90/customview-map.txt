@@ -1,0 +1,54 @@
+@string/appbar_scrolling_view_behavior;E:\Android Vistual Studio\Float Button\Float Button\obj\Debug\90\lp\42\jl\res\layout\flyoutcontent.xml
+@string/appbar_scrolling_view_behavior;E:\Android Vistual Studio\Float Button\Float Button\obj\Debug\90\lp\42\jl\res\layout\rootlayout.xml
+@string/appbar_scrolling_view_behavior;E:\Android Vistual Studio\Float Button\Float Button\obj\Debug\90\lp\42\jl\res\layout\shellcontent.xml
+accessibility-service;obj\Debug\90\res\xml\accessibility_service_config.xml
+adaptive-icon;obj\Debug\90\res\mipmap-anydpi-v26\ic_launcher.xml
+adaptive-icon;obj\Debug\90\res\mipmap-anydpi-v26\ic_launcher_round.xml
+alpha;E:\Android Vistual Studio\Float Button\Float Button\obj\Debug\90\lp\42\jl\res\anim\enterfromleft.xml
+alpha;E:\Android Vistual Studio\Float Button\Float Button\obj\Debug\90\lp\42\jl\res\anim\exittoleft.xml
+android.support.design.widget.AppBarLayout;E:\Android Vistual Studio\Float Button\Float Button\obj\Debug\90\lp\42\jl\res\layout\flyoutcontent.xml
+android.support.design.widget.AppBarLayout;E:\Android Vistual Studio\Float Button\Float Button\obj\Debug\90\lp\42\jl\res\layout\rootlayout.xml
+android.support.design.widget.AppBarLayout;E:\Android Vistual Studio\Float Button\Float Button\obj\Debug\90\lp\42\jl\res\layout\shellcontent.xml
+android.support.design.widget.BottomNavigationView;E:\Android Vistual Studio\Float Button\Float Button\obj\Debug\90\lp\42\jl\res\layout\bottomtablayout.xml
+android.support.design.widget.CoordinatorLayout;E:\Android Vistual Studio\Float Button\Float Button\obj\Debug\90\lp\42\jl\res\layout\flyoutcontent.xml
+android.support.design.widget.CoordinatorLayout;E:\Android Vistual Studio\Float Button\Float Button\obj\Debug\90\lp\42\jl\res\layout\rootlayout.xml
+android.support.design.widget.CoordinatorLayout;E:\Android Vistual Studio\Float Button\Float Button\obj\Debug\90\lp\42\jl\res\layout\shellcontent.xml
+android.support.design.widget.TabLayout;E:\Android Vistual Studio\Float Button\Float Button\obj\Debug\90\lp\42\jl\res\layout\rootlayout.xml
+android.support.v4.widget.NestedScrollView;E:\Android Vistual Studio\Float Button\Float Button\obj\Debug\90\lp\42\jl\res\layout\rootlayout.xml
+android.support.v4.widget.NestedScrollView;E:\Android Vistual Studio\Float Button\Float Button\obj\Debug\90\lp\42\jl\res\layout\shellcontent.xml
+android.support.v7.widget.RecyclerView;E:\Android Vistual Studio\Float Button\Float Button\obj\Debug\90\lp\42\jl\res\layout\flyoutcontent.xml
+android.support.v7.widget.Toolbar;E:\Android Vistual Studio\Float Button\Float Button\obj\Debug\90\lp\42\jl\res\layout\rootlayout.xml
+android.support.v7.widget.Toolbar;E:\Android Vistual Studio\Float Button\Float Button\obj\Debug\90\lp\42\jl\res\layout\shellcontent.xml
+background;obj\Debug\90\res\mipmap-anydpi-v26\ic_launcher.xml
+background;obj\Debug\90\res\mipmap-anydpi-v26\ic_launcher_round.xml
+Button;obj\Debug\90\res\layout\activity_main.xml
+cache-path;E:\Android Vistual Studio\Float Button\Float Button\obj\Debug\90\lp\41\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
+color;obj\Debug\90\res\values\colors.xml
+color;obj\Debug\90\res\values\ic_launcher_background.xml
+EditText;obj\Debug\90\res\layout\activity_main.xml
+external-cache-path;E:\Android Vistual Studio\Float Button\Float Button\obj\Debug\90\lp\41\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
+external-path;E:\Android Vistual Studio\Float Button\Float Button\obj\Debug\90\lp\41\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
+foreground;obj\Debug\90\res\mipmap-anydpi-v26\ic_launcher.xml
+foreground;obj\Debug\90\res\mipmap-anydpi-v26\ic_launcher_round.xml
+FrameLayout;E:\Android Vistual Studio\Float Button\Float Button\obj\Debug\90\lp\42\jl\res\layout\bottomtablayout.xml
+item;obj\Debug\90\res\values\styles.xml
+LinearLayout;E:\Android Vistual Studio\Float Button\Float Button\obj\Debug\90\lp\42\jl\res\layout\bottomtablayout.xml
+LinearLayout;obj\Debug\90\res\layout\activity_main.xml
+paths;E:\Android Vistual Studio\Float Button\Float Button\obj\Debug\90\lp\41\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
+RelativeLayout;obj\Debug\90\res\layout\activity_main.xml
+resources;obj\Debug\90\res\values\colors.xml
+resources;obj\Debug\90\res\values\ic_launcher_background.xml
+resources;obj\Debug\90\res\values\strings.xml
+resources;obj\Debug\90\res\values\styles.xml
+ScrollView;obj\Debug\90\res\layout\activity_main.xml
+set;E:\Android Vistual Studio\Float Button\Float Button\obj\Debug\90\lp\42\jl\res\anim\enterfromleft.xml
+set;E:\Android Vistual Studio\Float Button\Float Button\obj\Debug\90\lp\42\jl\res\anim\enterfromright.xml
+set;E:\Android Vistual Studio\Float Button\Float Button\obj\Debug\90\lp\42\jl\res\anim\exittoleft.xml
+set;E:\Android Vistual Studio\Float Button\Float Button\obj\Debug\90\lp\42\jl\res\anim\exittoright.xml
+string;obj\Debug\90\res\values\strings.xml
+style;obj\Debug\90\res\values\styles.xml
+TextView;obj\Debug\90\res\layout\activity_main.xml
+translate;E:\Android Vistual Studio\Float Button\Float Button\obj\Debug\90\lp\42\jl\res\anim\enterfromleft.xml
+translate;E:\Android Vistual Studio\Float Button\Float Button\obj\Debug\90\lp\42\jl\res\anim\enterfromright.xml
+translate;E:\Android Vistual Studio\Float Button\Float Button\obj\Debug\90\lp\42\jl\res\anim\exittoleft.xml
+translate;E:\Android Vistual Studio\Float Button\Float Button\obj\Debug\90\lp\42\jl\res\anim\exittoright.xml

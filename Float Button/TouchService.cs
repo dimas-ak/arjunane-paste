@@ -27,6 +27,13 @@ namespace Float_Button
         private static AccessibilityNodeInfo _nodeInfo;
         ButtonActivity ba = new ButtonActivity();
         SharedData sd = new SharedData();
+
+        static long delay_paste = 300;
+        static long current_time = 0;
+        static long first_time = 0;
+        static long compare_time = 0;
+        static int click_time = 0;
+
         public override void OnCreate()
         {
             base.OnCreate();
@@ -38,12 +45,6 @@ namespace Float_Button
             try
             {
 
-                Console.WriteLine("RootClass : " + RootInActiveWindow.ClassName);
-                Console.WriteLine("ClassName : " + e.ClassName);
-                Console.WriteLine("EventType : " + e.EventType);
-                Console.WriteLine("ItemIndex : " + e.CurrentItemIndex);
-                Console.WriteLine("WindowID  : " + e.WindowId);
-
                 AccessibilityNodeInfo nodeInfo = e.Source;
 
                 string nodeText = nodeInfo.Text;
@@ -51,28 +52,64 @@ namespace Float_Button
                 int startCursor = nodeInfo.TextSelectionStart;
                 int endCursor   = nodeInfo.TextSelectionEnd;
 
+                Console.WriteLine("Action       : " + e.GetAction());
+                Console.WriteLine("ClassName    : " + e.ClassName);
+
                 if ( ba.IsPasteText() && e.ClassName.IndexOf("EditText") != -1 && 
                      (  
                         nodeText.Length == 0 || 
                         (nodeText.Length != 0 && startCursor == -1 && endCursor == -1) || 
                         nodeText == nodeHint) 
                      )
-                { 
-                    ClipboardManager clipboard = (ClipboardManager)GetSystemService(ClipboardService);
-                    ClipData clip = ClipData.NewPlainText("tamvan", sd.GetData("characters"));
-                    clipboard.PrimaryClip = clip;
+                {
 
-                    nodeInfo.PerformAction(Action.Paste);
+                    if (first_time == 0)
+                    {
+                        first_time = e.EventTime;
+                    }
+                    else
+                    {
+                        current_time = e.EventTime;
+                    }
 
-                    Bundle arguments = new Bundle();
+                    compare_time = current_time - first_time;
 
-                    arguments.PutInt(AccessibilityNodeInfo.ActionArgumentSelectionStartInt, int.Parse(sd.GetData("cursor_index")));
-                    arguments.PutInt(AccessibilityNodeInfo.ActionArgumentSelectionEndInt, int.Parse(sd.GetData("cursor_index")));
-                    nodeInfo.PerformAction(Action.SetSelection, arguments);
+                    if (compare_time < delay_paste && compare_time > 100)
+                    {
+                        click_time += 1;
+                    }
+
+                    if(compare_time > delay_paste)
+                    {
+                        click_time = 0;
+                        first_time = e.EventTime;
+                    }
+
+                    if(click_time == 1)
+                    {
+                        ClipboardManager clipboard = (ClipboardManager)GetSystemService(ClipboardService);
+                        ClipData clip = ClipData.NewPlainText("tamvan", sd.GetData("characters"));
+                        clipboard.PrimaryClip = clip;
+
+                        nodeInfo.PerformAction(Action.Paste);
+
+                        Bundle arguments = new Bundle();
+
+                        arguments.PutInt(AccessibilityNodeInfo.ActionArgumentSelectionStartInt, int.Parse(sd.GetData("cursor_index")));
+                        arguments.PutInt(AccessibilityNodeInfo.ActionArgumentSelectionEndInt, int.Parse(sd.GetData("cursor_index")));
+                        nodeInfo.PerformAction(Action.SetSelection, arguments);
+                    }
+
+                    /*
+                    */
                     //nodeInfo.PerformAction(Action.Click); //set focus into EditText
 
                 }
-                _nodeInfo = FindFocus(NodeFocus.Input);
+                Console.WriteLine("First Time       : " + first_time);
+                Console.WriteLine("Current Time     : " + current_time);
+                Console.WriteLine("Compare Time     : " + compare_time);
+                Console.WriteLine("Click Time       : " + click_time);
+
 
                 nodeInfo.Refresh();
             }
